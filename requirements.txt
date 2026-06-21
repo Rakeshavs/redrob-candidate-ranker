@@ -1,0 +1,2 @@
+# Core Python dependencies
+# None required for the core script itself as it runs entirely on standard libraries (json, csv, sys, re, datetime)

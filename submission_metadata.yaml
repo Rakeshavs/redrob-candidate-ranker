@@ -1,0 +1,48 @@
+# Redrob Hackathon — Submission Metadata
+team_name: "Idea Architects"
+
+primary_contact:
+  name: "Rakesh Medhari"
+  email: "medharirakeshavs@gmail.com"
+  phone: "+91-9182698021"
+
+team_members:
+  - name: "Rakesh Medhari"
+    email: "medharirakeshavs@gmail.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/medharirakesh/redrob-candidate-ranker" # Update this once you create the repo!
+sandbox_link: "https://github.com/medharirakesh/redrob-candidate-ranker"  # Update with your sandbox link or use the Docker setup specified in the README
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./team_antigravity.csv"
+
+compute:
+  platform: "Local Windows Box"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini for architecture planning, designing honeypot detection rules, and structuring the candidate ranking logic.
+  No candidate data was uploaded or transmitted to external LLM APIs during ranking.
+
+methodology_summary: |
+  A lightweight, high-performance rule-based heuristic ranker that processes 100k candidates under 20 seconds.
+  First filters synthetic honeypot traps using strict checks (duplicate descriptions, impossible skill durations, invalid salary bounds).
+  Remaining candidates are evaluated using an experience fit metric (5-9 years target), targeted AI/ML/IR skill relevance, past product engineering experience (excluding consultancy firms), location matching, and multi-factor behavioral engagement signals.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
