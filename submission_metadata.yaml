@@ -11,8 +11,8 @@ team_members:
     email: "medharirakeshavs@gmail.com"
     role: "ML Engineer"
 
-github_repo: "https://github.com/medharirakesh/redrob-candidate-ranker" # Update this once you create the repo!
-sandbox_link: "https://github.com/medharirakesh/redrob-candidate-ranker"  # Update with your sandbox link or use the Docker setup specified in the README
+github_repo: "https://github.com/Rakeshavs/redrob-candidate-ranker"
+sandbox_link: "https://github.com/Rakeshavs/redrob-candidate-ranker"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./team_antigravity.csv"
 
